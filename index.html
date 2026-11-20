@@ -1,91 +1,710 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>PPRO installer slideshow</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>سوقك | Eylül Kadın Butiği</title>
+
+<meta name="description" content="سوقك - Eylül Kadın Butiği - معلومات الشركة والنشاط التجاري وبيانات التواصل.">
+
 <style>
+:root {
+  --main: #956b83;
+  --dark: #302a30;
+  --gray: #80777e;
+  --bg: #faf8f9;
+  --line: #eee6ea;
+  --soft: #f8eef3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-		background-color: #fff;
+  scroll-behavior: smooth;
 }
-* {box-sizing: border-box;}
+
 body {
-	margin:0px;}
-.mySlides {opacity: 0; position: absolute; transition: all 1s;}
-img {vertical-align: middle;}
+  margin: 0;
+  background: var(--bg);
+  color: var(--dark);
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.8;
+}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 445px;
-  position: relative;
+.container {
+  width: 92%;
+  max-width: 860px;
   margin: auto;
-  cursor: pointer;
 }
 
-/* Caption text */
-.text {
-  font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-weight: 450;
-  font-size: 15px;
-  letter-spacing: .3;
-  padding-left: 20px;
-  position: absolute;
-  bottom: 95px;
-  width: 30%;
-  text-align: center;
+header {
+  background: white;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-	font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-  color: #f2f2f2;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  color: var(--main);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo small {
+  display: block;
+  color: var(--gray);
   font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  font-weight: normal;
+  direction: ltr;
+  text-align: right;
 }
 
-.active {
-  background-color: #717171;
+header a {
+  color: var(--main);
+  text-decoration: none;
+  font-size: 14px;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
+.hero {
+  background: white;
+  padding: 65px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
+.symbol {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 22px;
+  background: var(--soft);
+  border-radius: 50%;
+  color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-@keyframes fade {
-  from {opacity: .1}
-  to {opacity: 1}
+.hero h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  margin: 0;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.hero .turkish {
+  direction: ltr;
+  color: var(--main);
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.hero .subtitle {
+  color: var(--gray);
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.hero p {
+  max-width: 540px;
+  margin: 22px auto;
+  color: var(--gray);
+  font-size: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.tags span {
+  background: var(--soft);
+  color: var(--main);
+  padding: 7px 17px;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+main {
+  padding: 35px 0;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 15px 20px;
+  background: var(--soft);
+  border-right: 4px solid var(--main);
+  font-size: 19px;
+}
+
+.content {
+  padding: 10px 22px;
+}
+
+.company-names {
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.name1 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.name2 {
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--main);
+  direction: ltr;
+}
+
+.name3 {
+  font-size: 23px;
+  margin-top: 15px;
+}
+
+.name4 {
+  color: var(--gray);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.name5 {
+  color: var(--main);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  direction: ltr;
+  margin-top: 12px;
+}
+
+.name6 {
+  color: var(--gray);
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--main);
+  margin: 23px auto;
+}
+
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.name-grid div {
+  padding: 16px;
+  background: var(--soft);
+  color: var(--main);
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.value a {
+  color: var(--main);
+  text-decoration: none;
+}
+
+.status {
+  color: #258154;
+}
+
+.contact {
+  background: var(--main);
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  padding: 38px 20px;
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.contact .turkish {
+  direction: ltr;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.contact p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.contact a {
+  display: inline-block;
+  background: white;
+  color: var(--main);
+  padding: 11px 22px;
+  margin: 7px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.note {
+  color: var(--gray);
+  font-size: 12px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer .arabic {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+footer .turkish {
+  font-size: 21px;
+  color: var(--main);
+  font-weight: bold;
+  direction: ltr;
+}
+
+footer .small {
+  font-size: 12px;
+  color: var(--gray);
+  margin-top: 15px;
+}
+
+@media(max-width:600px) {
+  .hero {
+    padding: 45px 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .value {
+    text-align: right;
+  }
+
+  .content {
+    padding: 10px 16px;
+  }
+
+  .name-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name1 {
+    font-size: 30px;
+  }
+
+  .name2 {
+    font-size: 21px;
+  }
+
+  .contact a {
+    display: block;
+    max-width: 280px;
+    margin: 10px auto;
+  }
 }
 </style>
 </head>
+
 <body>
-<div class="slideshow-container" id="slideContainer" href="#">
 
-<div class="mySlides fade" style="opacity: 1; visibility: visible;">
-    <video class="videos" autoplay loop muted style="width: 445px; height: 239px;"><source src="images/01_creativity_for_all_445x239.mp4" style="width: 445px; height: 239px;"></video>
-    <div class="text" id="slideText1">Creativity for all.</div>
+<!-- Header -->
+
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      سوقك
+      <small>Eylül Kadın Butiği</small>
+    </div>
+
+    <a href="#contact">تواصل معنا</a>
+  </div>
+</header>
+
+<!-- Main Banner -->
+
+<section class="hero">
+
+  <div class="symbol">E</div>
+
+  <h1>سوقك</h1>
+
+  <div class="turkish">
+    Eylül Kadın Butiği
+  </div>
+
+  <div class="subtitle">
+    بوتيك أيلول النسائي
+  </div>
+
+  <p>
+    مرحبًا بكم في سوقك.
+    تعرفوا على معلومات نشاطنا التجاري
+    وخدماتنا وطرق التواصل معنا.
+  </p>
+
+  <div class="tags">
+    <span>سوقك</span>
+    <span>Eylül Kadın Butiği</span>
+    <span>أيلول</span>
+    <span>EYLÜL</span>
+    <span>بوتيك أيلول</span>
+    <span>سوقك بوتيك</span>
+  </div>
+
+</section>
+
+<main class="container">
+
+<!-- Company Names -->
+
+<section class="card">
+
+  <h2>اسم الشركة بالعربية والتركية</h2>
+
+  <div class="company-names">
+
+    <div class="name1">
+      سوقك
+    </div>
+
+    <div class="name2">
+      Eylül Kadın Butiği
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="name3">
+      بوتيك أيلول النسائي
+    </div>
+
+    <div class="name4">
+      أيلول للأزياء النسائية
+    </div>
+
+    <div class="name5">
+      EYLÜL KADIN BUTİĞİ
+    </div>
+
+    <div class="name6">
+      أيلول | Eylül
+    </div>
+
+    <div class="name6">
+      سوقك | Eylül Butik
+    </div>
+
+    <div class="name6">
+      سوقك للأزياء النسائية
+    </div>
+
+    <div class="name-grid">
+      <div>سوقك</div>
+      <div dir="ltr">EYLÜL</div>
+      <div>بوتيك أيلول</div>
+      <div dir="ltr">Eylül Kadın Butiği</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Company Information -->
+
+<section class="card">
+
+  <h2>معلومات الشركة</h2>
+
+  <div class="content">
+
+    <div class="row">
+      <span class="label">الاسم التجاري</span>
+      <span class="value">
+        Eylül Kadın Butiği
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">الاسم بالعربية</span>
+      <span class="value">سوقك</span>
+    </div>
+
+    <div class="row">
+      <span class="label">رقم السجل التجاري</span>
+      <span class="value">19188670</span>
+    </div>
+
+    <div class="row">
+      <span class="label">الشكل القانوني</span>
+      <span class="value">
+        من الشركات الكبرى
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">حالة السجل حسب المستند</span>
+      <span class="value status">
+        نشط - Active
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">تاريخ التسجيل</span>
+      <span class="value">2023/08/20</span>
+    </div>
+
+    <div class="row">
+      <span class="label">استثمار أجنبي</span>
+      <span class="value">نعم - Yes</span>
+    </div>
+
+    <div class="row">
+      <span class="label">تاريخ انتهاء السجل</span>
+      <span class="value">11/12/2028</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- License Information -->
+
+<section class="card">
+
+  <h2>معلومات النشاط والترخيص</h2>
+
+  <div class="content">
+
+    <div class="row">
+      <span class="label">رقم الترخيص</span>
+      <span class="value">L2891880</span>
+    </div>
+
+    <div class="row">
+      <span class="label">تعريف الترخيص</span>
+      <span class="value">LD-111</span>
+    </div>
+
+    <div class="row">
+      <span class="label">النشاط المسجل</span>
+      <span class="value">
+        خدمات الترويج والتسويق
+        على المواقع الإلكترونية
+        ووسائل التواصل الاجتماعي
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">مدة الترخيص</span>
+      <span class="value">12 شهرًا</span>
+    </div>
+
+    <div class="row">
+      <span class="label">الإصدار الأول</span>
+      <span class="value">25/06/2023</span>
+    </div>
+
+    <div class="row">
+      <span class="label">تاريخ الإصدار</span>
+      <span class="value">2024/08/20</span>
+    </div>
+
+    <div class="row">
+      <span class="label">انتهاء الترخيص</span>
+      <span class="value">11/12/2028</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Information -->
+
+<section class="card">
+
+  <h2>معلومات التواصل</h2>
+
+  <div class="content">
+
+    <div class="row">
+      <span class="label">رقم الهاتف</span>
+      <span class="value">
+        <a href="tel:+966510878656">
+          +966510878656
+        </a>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">البريد الإلكتروني</span>
+      <span class="value">
+        <a href="mailto:Ot@km2j.github.io">
+          Ot@km2j.github.io
+        </a>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">الموقع الإلكتروني</span>
+      <span class="value">
+        <a href="https://km2j.github.io"
+           target="_blank"
+           rel="noopener noreferrer">
+          km2j.github.io
+        </a>
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">العنوان</span>
+      <span class="value">
+        طريق الملك سلمان،
+        العليا، الخرج،
+        11943،
+        المملكة العربية السعودية
+      </span>
+    </div>
+
+    <div class="row">
+      <span class="label">الرمز البريدي</span>
+      <span class="value">11943</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+
+<section class="contact" id="contact">
+
+  <h2>تواصل مع سوقك</h2>
+
+  <div class="turkish">
+    Eylül Kadın Butiği
+  </div>
+
+  <p>
+    يسعدنا استقبال استفساراتكم
+    والتواصل معكم.
+  </p>
+
+  <a href="tel:+966510878656">
+    اتصال هاتفي
+  </a>
+
+  <a href="mailto:Ot@km2j.github.io">
+    البريد الإلكتروني
+  </a>
+
+  <a href="https://wa.me/966510878656"
+     target="_blank"
+     rel="noopener noreferrer">
+    واتساب
+  </a>
+
+  <a href="https://km2j.github.io"
+     target="_blank"
+     rel="noopener noreferrer">
+    زيارة الموقع
+  </a>
+
+</section>
+
+<div class="note">
+  هذه صفحة تعريفية تعرض بيانات المستند المرفق
+  دون تحقق مستقل، وليست شهادة رسمية
+  أو وسيلة حكومية للتحقق من الترخيص.
+  الأسماء البديلة صيغ عرض وتسويق،
+  وليست أسماء قانونية مسجلة.
 </div>
 
-</div>
+</main>
 
-<script type="text/javascript" src="lib/jquery.min.js"></script>
-<script type="text/javascript" src="carousel.js"></script>
+<!-- Footer -->
+
+<footer>
+
+  <div class="arabic">
+    سوقك
+  </div>
+
+  <div class="turkish">
+    Eylül Kadın Butiği
+  </div>
+
+  <div class="small">
+    أيلول | EYLÜL
+    <br>
+    بوتيك أيلول النسائي
+    <br>
+    © 2026 Eylül Kadın Butiği
+    <br>
+    km2j.github.io
+    <br>
+    Al-Kharj, Saudi Arabia - 11943
+  </div>
+
+</footer>
+
 </body>
 </html>
